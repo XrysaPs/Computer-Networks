@@ -32,11 +32,11 @@ public class virtualModem {
  		long startTime=0, endTime=0, duration=0;
  		
  		try {
- 			File textFile = new File("C:\\Users\\user\\Desktop\\Εργασία δίκτυα\\ΤΡΙΤΗ_ΣΥΝΟΔΟΣ\\ECHO_DURATION.txt");
+ 			File textFile = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ¤ΓΓªΓ΄ΓµΓ΅\\Γ”Γ‘Γ‰Γ”Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ECHO_DURATION.txt");
 	        FileOutputStream os = new FileOutputStream(textFile);
 	        Writer w = new OutputStreamWriter(os);
 	        
-	        File textFile2 = new File("C:\\Users\\user\\Desktop\\Εργασία δίκτυα\\ΤΡΙΤΗ_ΣΥΝΟΔΟΣ\\ECHO.txt");
+	        File textFile2 = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ¤ΓΓªΓ΄ΓµΓ΅\\Γ”Γ‘Γ‰Γ”Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ECHO.txt");
 	        FileOutputStream os2 = new FileOutputStream(textFile2);
 	        Writer w2 = new OutputStreamWriter(os2);
 	        
@@ -135,15 +135,15 @@ public class virtualModem {
  		String s = "";
  		
  		try {
- 			File textFile = new File("C:\\Users\\user\\Desktop\\Εργασία δίκτυα\\ΤΡΙΤΗ_ΣΥΝΟΔΟΣ\\ARQ_DURATION1.txt");
+ 			File textFile = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ¤ΓΓªΓ΄ΓµΓ΅\\Γ”Γ‘Γ‰Γ”Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ARQ_DURATION1.txt");
  			FileOutputStream is = new FileOutputStream(textFile);
             Writer w = new OutputStreamWriter(is);
 	        
-            File textFile2 = new File("C:\\Users\\user\\Desktop\\Εργασία δίκτυα\\ΤΡΙΤΗ_ΣΥΝΟΔΟΣ\\ARQ_numOfNACKForEachPacket1.txt");
+            File textFile2 = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ¤ΓΓªΓ΄ΓµΓ΅\\Γ”Γ‘Γ‰Γ”Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ARQ_numOfNACKForEachPacket1.txt");
  			FileOutputStream is2 = new FileOutputStream(textFile2);
             Writer w2 = new OutputStreamWriter(is2);
             
-            File textFile3 = new File("C:\\Users\\user\\Desktop\\Εργασία δίκτυα\\ΤΡΙΤΗ_ΣΥΝΟΔΟΣ\\ARQ1.txt");
+            File textFile3 = new File("C:\\Users\\user\\Desktop\\Γ…Γ±Γ£Γ΅Γ³ΓΓ΅ Γ¤ΓΓªΓ΄ΓµΓ΅\\Γ”Γ‘Γ‰Γ”Γ‡_Γ“Γ•ΓΓΓ„ΓΓ“\\ARQ1.txt");
  			FileOutputStream is3 = new FileOutputStream(textFile3);
             Writer w3 = new OutputStreamWriter(is3);
             
@@ -313,9 +313,9 @@ public class virtualModem {
  		virtualModem.welcomeMessage(modem);
  		System.out.println();
  		
- 		//virtualModem.echoPacket(modem);
- 		//virtualModem.image(modem);
- 		//virtualModem.errorARQ(modem);
+ 		virtualModem.echoPacket(modem);
+ 		virtualModem.image(modem);
+ 		virtualModem.errorARQ(modem);
  		virtualModem.gps(modem);
  		virtualModem.gpsImage(modem);
  		
